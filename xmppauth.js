@@ -47,6 +47,6 @@ angular.module('angular-xmppauth', [])
             connection: connection,
             setXmppBasePath: function(new_base_path){
                 xmppBasePath = new_base_path;
-            };
+            }
         };
     }]);
