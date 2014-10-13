@@ -9,8 +9,8 @@
 
 angular.module('angular-xmppauth', [])
     .factory('XmppAuth', [function() {
-
-        var connection = new Strophe.Connection('http://localhost:5280/http-bind');
+        var  xmppBasePath = 'http://localhost:5280/http-bind';
+        var connection = new Strophe.Connection(xmppBasePath);
         return {
 
             auth: function(login, password) {
@@ -29,9 +29,9 @@ angular.module('angular-xmppauth', [])
                     }
                 });
             },
-            sendMessage: function(userid, text_message) {
+            sendMessage: function(userid, to_jid, text_message) {
                 if (text_message.length > 0) {
-                    var connect_jid = 'user2@localhost';
+                    var connect_jid = to_jid;
                     var timestamp = new Date().getTime();
                     var to_jid = Strophe.getBareJidFromJid(connect_jid);
                     var message = $msg({
@@ -44,6 +44,9 @@ angular.module('angular-xmppauth', [])
                     connection.send(message);
                 }
             },
-            connection: connection
+            connection: connection,
+            setXmppBasePath: function(new_base_path){
+                xmppBasePath = new_base_path;
+            };
         };
     }]);
