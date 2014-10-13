@@ -4,6 +4,7 @@
     "authors": [
         "Rahul Gaur rahul.nbg@gmail.com"
     ],
+    "main": "xmppauth.js",
     "description": "Angularjs service to handle connection to XMPP server like ejabbred, jappix etc..",
     "keywords": [
         ""
