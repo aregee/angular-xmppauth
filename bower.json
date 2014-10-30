@@ -1,25 +1,26 @@
 {
-    "name": "angular-xmppauth",
-    "version": "1.0.2",
-    "authors": [
-        "Rahul Gaur rahul.nbg@gmail.com"
-    ],
-    "main": "xmppauth.js",
-    "description": "Angularjs service to handle connection to XMPP server like ejabbred, jappix etc..",
-    "keywords": [
-        ""
-    ],
-    "license": "MIT",
-    "ignore": [ 
-        "**/.*",
-        "node_modules",
-        "bower_components",
-        "test",
-        "tests"
-    ],
-    "dependencies": {
-        "angular": "~1.2.0",
-        "strophe": "~1.1.1"
-    },
-    "devDependencies": {}
+  "name": "angular-xmppauth",
+  "version": "1.0.2",
+  "authors": [
+    "Rahul Gaur rahul.nbg@gmail.com"
+  ],
+  "main": "xmppauth.js",
+  "description": "Angularjs service to handle connection to XMPP server like ejabbred, jappix etc..",
+  "keywords": [
+    ""
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.0",
+    "strophe": "~1.1.1",
+    "strophejs-plugins": "~0.0.3"
+  },
+  "devDependencies": {}
 }
